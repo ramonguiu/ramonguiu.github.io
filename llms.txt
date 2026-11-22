@@ -1,0 +1,20 @@
+---
+layout: null
+permalink: /llms.txt
+sitemap: false
+---
+# Ramon Guiu
+
+> {{ site.description | strip }}
+
+Ramon builds developer infrastructure and takes it to market. Engineer by training, 20+ years in software, the last 10 in developer tools. He leads Product, Sales and Partnerships at Tiger Data (the company behind TimescaleDB). Previously GM and VP Product at New Relic, where New Relic Infrastructure grew from under $1M to over $40M ARR. Two-time founder. MBA from IESE. Based in Barcelona; works in English, Spanish, French and Catalan.
+
+## Pages
+
+- [Full profile in Markdown]({{ site.url }}/llms-full.txt): full resume in a single file
+- [Resume]({{ site.url }}/resume/): full career history
+
+## Elsewhere
+
+{% for l in site.social.links %}- {{ l }}
+{% endfor %}

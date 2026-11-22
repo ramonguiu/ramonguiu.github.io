@@ -1,0 +1,106 @@
+# Source of truth for /resume. Most recent first.
+# Each company has one or more positions; highlights apply to the whole stint.
+
+- company: Tiger Data
+  note: creators of TimescaleDB, formerly Timescale
+  url: https://www.tigerdata.com
+  location: Remote
+  start: 2021-07
+  end: present
+  positions:
+    - { title: "VP of Revenue and Product", start: 2025-10, end: present }
+    - { title: "VP of Product", start: 2023-02, end: 2025-10 }
+    - { title: "VP of Observability Products", start: 2021-07, end: 2023-02 }
+  highlights:
+    - "Lead an org of about 50 across product, sales, solutions architects and partnerships. Have led product since February 2023. Along the way I also led product marketing and, for a few months, the core time-series business, and took on revenue in October 2025."
+    - "Results since taking over product: ARR grew more than 12x, signup-to-paid conversion doubled, and gross margin went from negative to healthy cloud-infrastructure levels."
+    - "Drove that growth through pricing and packaging (from one plan to three tiers, launched August 2024), a growth team built on experimentation and weekly metric reviews, and expansion features such as read replicas, database branching and more storage options."
+    - "Introduced weekly operating rhythms across product and go-to-market: cross-team planning and delivery tracking, lead and pipeline tracking, a weekly quarterly-forecast update, and a GTM performance review."
+    - Led Promscale, an observability product on TimescaleDB. When it was clear we couldn't win on price-performance in a commoditized market, I recommended shutting it down and moving the team to the core database.
+
+- company: New Relic
+  note: "observability platform for engineering teams, public company (NYSE: NEWR) at the time"
+  url: https://newrelic.com
+  location: Barcelona
+  start: 2017-02
+  end: 2021-06
+  positions:
+    - { title: "VP Product Management, Data Collection", start: 2020-05, end: 2021-06 }
+    - { title: "General Manager & VP Product, New Relic Infrastructure", start: 2017-02, end: 2020-05 }
+  highlights:
+    - Joined as Principal PM on New Relic Infrastructure right after launch. Promoted four times in two years, through Director, Senior Director and VP to General Manager.
+    - "Led a team of 50 across product, design, engineering and product marketing that made New Relic Infrastructure the fastest-growing product in the company's history: ARR from under $1M to over $40M, paying accounts from 100 to thousands, and daily monitored hosts from 5K to over 1M."
+    - Wrote the multi-year GTM and growth plan for New Relic Infrastructure, secured exec funding, introduced new pricing and packaging, and drove execution with sales and marketing.
+    - Product sponsor for the acquisition of CoScale to accelerate Kubernetes monitoring.
+    - Led New Relic's shift in instrumentation from proprietary agents and standards to open-source code built on OpenTelemetry and OpenMetrics.
+
+- company: Xyleme
+  note: EdTech SaaS for creating, publishing and managing training content
+  location: Barcelona
+  start: 2011-01
+  end: 2016-12
+  positions:
+    - { title: "Director of Product Management", start: 2011-01, end: 2016-12 }
+  highlights:
+    - First product manager. Promoted to Director after two years, reporting to the CEO.
+    - Owned product strategy for the entire platform. Revenue tripled in four years as the company grew from 30 to 120 people.
+    - Introduced a product process built on user-centred design, data-informed decisions and stakeholder alignment.
+    - Designed and launched Content Delivery Service (CDS), a delivery platform for training content with iOS and Android apps.
+    - Products received multiple awards from top industry analyst firms.
+
+- company: Foundum
+  location: Barcelona
+  start: 2010-09
+  end: 2011-01
+  positions:
+    - { title: "Interim Product Manager (contract)", start: 2010-09, end: 2011-01 }
+  highlights:
+    - Turned the founders' vision into the specs and wireframes for v1 of a platform connecting entrepreneurs with their ecosystem.
+
+- company: LeadSpot
+  location: Barcelona
+  start: 2009-10
+  end: 2010-12
+  positions:
+    - { title: "Co-founder", start: 2009-10, end: 2010-12 }
+  highlights:
+    - Matchmaking and lead generation for trade shows, started during the MBA. The business plan and financial model secured a government soft loan.
+
+- company: Active Venture Partners
+  location: Barcelona
+  start: 2009-06
+  end: 2009-09
+  positions:
+    - { title: "Summer Associate", start: 2009-06, end: 2009-09 }
+  highlights:
+    - Screened incoming business plans and built valuation models for portfolio companies.
+
+- company: 2or3things
+  location: Paris
+  start: 2006-06
+  end: 2008-10
+  positions:
+    - { title: "Co-founder", start: 2006-06, end: 2008-10 }
+  highlights:
+    - Built B2C and B2B products around RSS feeds and social networks.
+    - rollSense, a content recommendation widget for blogs, served 3M recommendations a month at a 3.5% CTR within six months of launch.
+    - Negotiated a partnership with Yahoo France to integrate their ad technology into rollSense.
+
+- company: Xyleme SA
+  location: Paris & London
+  start: 2002-12
+  end: 2006-05
+  positions:
+    - { title: "QA Engineer → Project Engineer → Project Manager", start: 2002-12, end: 2006-05 }
+  highlights:
+    - Promoted three times in three and a half years, from QA engineer to project engineer to project manager.
+    - Designed and presented solutions to three US investment banks, which led to one sale and one evaluation.
+
+- company: IBM Business Consulting Services
+  location: Paris
+  start: 2002-08
+  end: 2002-11
+  positions:
+    - { title: "Software Developer (intern)", start: 2002-08, end: 2002-11 }
+  highlights:
+    - Built mobile workforce-management apps for Palm and Windows CE.

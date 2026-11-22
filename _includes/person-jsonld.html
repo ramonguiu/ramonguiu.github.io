@@ -1,0 +1,30 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": "{{ site.url }}/",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/#person",
+    "name": "Ramon Guiu",
+    "url": "{{ site.url }}/",
+    "image": "{{ site.url }}/assets/images/profile.jpg",
+    "jobTitle": {{ site.tagline | remove: " at Tiger Data" | jsonify }},
+    "description": {{ site.description | strip | jsonify }},
+    "worksFor": { "@type": "Organization", "name": "Tiger Data", "url": "https://www.tigerdata.com" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Barcelona", "addressCountry": "ES" },
+    "alumniOf": [
+      {%- for e in site.data.education -%}
+      { "@type": "EducationalOrganization", "name": {{ e.school | jsonify }} }{% unless forloop.last %},{% endunless %}
+      {%- endfor -%}
+    ],
+    "knowsLanguage": ["en", "es", "fr", "ca"],
+    "knowsAbout": ["Product management", "Go-to-market strategy", "Developer tools", "Databases", "PostgreSQL", "TimescaleDB", "Observability", "OpenTelemetry", "SaaS"],
+    "sameAs": [
+      {%- for l in site.social.links -%}
+      {{ l | jsonify }}{% unless forloop.last %},{% endunless %}
+      {%- endfor -%}
+    ]
+  }
+}
+</script>

@@ -1,0 +1,56 @@
+---
+title: Resume
+permalink: /resume/
+description: Resume of Ramon Guiu, VP of Revenue and Product at Tiger Data and former GM and VP Product at New Relic.
+---
+<p class="prompt no-print">$ cat ~/resume.md</p>
+<div class="role-head">
+  <h1>Ramon Guiu</h1>
+  <button class="print-btn" onclick="window.print()">print / save pdf</button>
+</div>
+<p class="meta">
+  VP of Revenue and Product, Tiger Data · Barcelona, Spain ·
+  <a href="{{ site.links.linkedin }}">linkedin.com/in/ramonguiu</a> · ramonguiu.com
+</p>
+
+<h2>Summary</h2>
+<p>
+  Product and go-to-market executive in developer infrastructure. Today I lead Product and
+  Revenue at Tiger Data, where ARR has grown more than 12x since I took over product in 2023.
+  Before that, as GM of New Relic Infrastructure, I grew a product from under $1M to over
+  $40M ARR. 20+ years in software, from engineer to two-time founder to executive.
+</p>
+
+<h2>Experience</h2>
+{% for job in site.data.experience %}
+<section class="role">
+  <div class="role-head">
+    <h3>{{ job.company }}</h3>
+    <span class="dates">{% assign y0 = job.start | slice: 0, 4 %}{% assign y1 = job.end | slice: 0, 4 %}{% if job.end == "present" %}{{ y0 }}–now{% elsif y0 == y1 %}{{ y0 }}{% else %}{{ y0 }}–{{ y1 }}{% endif %}</span>
+  </div>
+  <p class="company">
+    {% if job.note %}{{ job.note }} · {% endif %}{{ job.location }}
+  </p>
+  <ul class="positions">
+    {% for p in job.positions %}
+    <li><span>{{ p.title }}</span><span class="dates">{% include ym.html d=p.start %} – {% include ym.html d=p.end %}</span></li>
+    {% endfor %}
+  </ul>
+  <ul>
+    {% for h in job.highlights %}<li>{{ h }}</li>{% endfor %}
+  </ul>
+</section>
+{% endfor %}
+
+<h2>Education</h2>
+<ul class="positions">
+  {% for e in site.data.education %}
+  <li><span>{{ e.degree }}, {{ e.school }}</span><span class="dates">{{ e.years }}</span></li>
+  {% endfor %}
+</ul>
+
+<h2>Also</h2>
+<ul>
+  <li>Co-founder and organizer of ProductTank Barcelona (2016–2019).</li>
+  <li>Languages: Catalan and Spanish (native), English and French (professional), Italian (basic).</li>
+</ul>

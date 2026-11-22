@@ -1,0 +1,30 @@
+---
+published: false  # unhide when there is content
+title: Writing
+permalink: /writing/
+description: Essays and blog posts by Ramon Guiu on product management, go-to-market and developer infrastructure.
+---
+<p class="prompt">$ ls -t ~/writing</p>
+<h1>Writing</h1>
+
+{%- comment -%}
+  Posts (_posts/) and external links (_data/writing_external.yml) have different date types,
+  so render each as "YYYY-MM-DD<html>" and sort the strings.
+{%- endcomment -%}
+{%- capture rows -%}
+  {%- for p in site.posts -%}
+    {{ p.date | date: '%Y-%m-%d' }}<li><span class="date">{{ p.date | date: '%Y-%m-%d' }}</span><span><a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% if p.publication %}<span class="sub">originally in {{ p.publication }}</span>{% endif %}</span></li>@@ROW@@
+  {%- endfor -%}
+  {%- for p in site.data.writing_external -%}
+    {{ p.date | date: '%Y-%m-%d' }}<li><span class="date">{{ p.date | date: '%Y-%m-%d' }}</span><span><a href="{{ p.url }}">{{ p.title }} ↗</a>{% if p.publication %}<span class="sub">on {{ p.publication }}</span>{% endif %}</span></li>@@ROW@@
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign rows = rows | split: "@@ROW@@" | sort | reverse -%}
+
+{% if rows.size == 0 %}
+<p class="meta">Nothing here yet. Older posts are being restored from the archive.</p>
+{% else %}
+<ul class="entries">
+  {% for r in rows %}{{ r | slice: 10, 100000 }}{% endfor %}
+</ul>
+{% endif %}

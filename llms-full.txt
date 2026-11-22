@@ -1,0 +1,42 @@
+---
+layout: null
+permalink: /llms-full.txt
+sitemap: false
+---
+{%- capture nl %}
+{% endcapture -%}
+# Ramon Guiu
+
+{{ site.tagline }}. Barcelona, Spain.
+Website: {{ site.url }}
+{% for l in site.social.links %}- {{ l }}
+{% endfor %}
+## Summary
+
+Ramon builds developer infrastructure and takes it to market. Engineer by training, 20+ years in software, the last 10 in developer tools. He has led product, engineering and go-to-market teams, and founded two companies. Languages: Catalan and Spanish (native), English and French (professional), Italian (basic).
+
+## Experience
+{% for job in site.data.experience %}
+### {{ job.company }}{% if job.note %} ({{ job.note }}){% endif %}
+
+{{ job.location }} · {{ job.start }} to {{ job.end }}
+{% for p in job.positions %}
+- {{ p.title }}: {{ p.start }} to {{ p.end }}{% endfor %}
+
+Highlights:
+{% for h in job.highlights %}
+- {{ h }}{% endfor %}
+{% endfor %}
+## Education
+{% for e in site.data.education %}
+- {{ e.degree }}, {{ e.school }} ({{ e.years }}){% endfor %}
+
+{% assign has_writing = site.posts.size | plus: site.data.writing_external.size %}{% if has_writing > 0 %}## Writing
+{% for p in site.posts %}
+- [{{ p.title }}]({{ site.url }}{{ p.url }}) ({{ p.date | date: '%Y-%m-%d' }}{% if p.publication %}, originally published in {{ p.publication }}{% endif %}){% endfor %}{% for p in site.data.writing_external %}
+- [{{ p.title }}]({{ p.url }}) ({{ p.date | date: '%Y-%m-%d' }}, {{ p.publication }}){% endfor %}
+
+{% endif %}{% if site.data.talks.size > 0 %}## Talks
+{% for t in site.data.talks %}
+- {{ t.title }}, {{ t.event }} ({{ t.date | date: '%Y-%m-%d' }}){% if t.video %} video: {{ t.video }}{% endif %}{% if t.slides %} slides: {{ t.slides }}{% endif %}{% endfor %}
+{% endif %}

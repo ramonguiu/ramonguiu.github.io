@@ -1,0 +1,25 @@
+---
+title: Work
+permalink: /work/
+description: Products Ramon Guiu has built and taken to market.
+---
+<p class="prompt">$ ls -l ~/work</p>
+<h1>Products I've built and taken to market</h1>
+
+{% for w in site.data.work %}
+<section class="role">
+  <div class="role-head">
+    <h3>{{ w.name }}</h3>
+    <span class="dates">{{ w.years }}</span>
+  </div>
+  <p class="company">{{ w.org }} · {{ w.role }}</p>
+  <p>{{ w.summary }}</p>
+  {% if w.outcomes.size > 0 %}
+  <ul>{% for o in w.outcomes %}<li>{{ o }}</li>{% endfor %}</ul>
+  {% endif %}
+  {% if w.links.size > 0 %}
+  <p>{% for l in w.links %}<a href="{{ l.url }}">{{ l.title }} ↗</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
+  {% endif %}
+  {% if w.tags %}<p class="tags">{% for t in w.tags %}#{{ t }} {% endfor %}</p>{% endif %}
+</section>
+{% endfor %}

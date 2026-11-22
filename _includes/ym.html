@@ -1,0 +1,1 @@
+{%- if include.d == "present" -%}now{%- else -%}{{ include.d | replace: "-", "." }}{%- endif -%}

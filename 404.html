@@ -1,14 +1,8 @@
 ---
-layout: default
-permalink: /404.html 
+title: Not found
+permalink: /404.html
+sitemap: false
 ---
-
-<section class="lost-container">
-  <h1>Uh oh!</h1>
-  <div class="link">
-    <img class="selfie" alt="{{ site.name }}" src="{{ site.url }}/assets/images/error.gif" />
-  </div>
-  <br />
-  <br />
-  <a href="/">Take me home!</a>
-</section>
+<p class="prompt">$ cd {{ page.url }}</p>
+<p>cd: no such file or directory</p>
+<p><a href="{{ '/' | relative_url }}">cd ~</a></p>

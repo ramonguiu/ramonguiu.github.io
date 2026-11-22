@@ -1,49 +1,23 @@
 ---
-layout: page
+layout: default
 ---
+<article class="post">
+  <p class="prompt">$ cat ~/writing/{{ page.slug }}.md</p>
+  <h1>{{ page.title }}</h1>
+  <p class="meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y-%m-%d' }}</time>
+    {% if page.publication %} · originally published in
+      {% if page.original_url %}<a href="{{ page.original_url }}">{{ page.publication }}</a>{% else %}{{ page.publication }}{% endif %}
+    {% endif %}
+  </p>
+  {% if page.publication %}
+  <aside class="note">
+    Republished here because the original is no longer online.
+    {% if page.archive_url %}<a href="{{ page.archive_url }}">Archived copy</a>.{% endif %}
+  </aside>
+  {% endif %}
 
-{% if page.image and page.headerImage %}
-    <img class="title-image" src="{{ page.image }}" alt="{{ page.title }}">
-{% endif %}
+  {{ content }}
 
-<h1 class="title">{{ page.title }}</h1>
-
-<span class="date">
-    <time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%A. %B %d, %Y" }}</time>
-    {% if site.read-time %} - {% include read-time.html %}{% endif %}
-</span>
-
-{% if site.show-tags %}
-    <div class="post-tags">
-        {% for tag in page.tags %}
-            <a class="item" href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
-        {% endfor %}
-    </div>
-{% endif %}
-
-{{content}}
-
-{% if site.post-advance-links contains page.category %}
-    <div class="blog-navigation">
-        {% if page.previous.hidden == false and page.previous.url %}
-            <a class="prev" href="{{ site.url }}{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
-        {% else %}
-            <a class="prev"></a>
-        {% endif %}
-        {% if page.next.hidden == false and page.next.url %}
-            <a class="next" href="{{ site.url }}{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
-        {% endif %}
-    </div>
-{% endif %}
-
-{% if site.related %}
-    {% include related.html %}
-{% endif %}
-
-{% if site.show-author %}
-    {% include author.html %}
-{% endif %}
-
-{% if site.disqus.categories contains page.category %}
-    {% include disqus.html %}
-{% endif %}
+  <p class="back"><a href="{{ '/writing/' | relative_url }}">&larr; all writing</a></p>
+</article>

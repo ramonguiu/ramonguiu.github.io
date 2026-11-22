@@ -1,0 +1,86 @@
+# Products and initiatives shown on /work. Most recent first.
+# Fields: name, org, years, role, summary, outcomes (list), links (list of {title, url}), tags
+
+- name: Tiger Cloud
+  org: Tiger Data
+  years: 2023–present
+  role: VP of Product, now VP of Revenue and Product
+  summary: >-
+    Managed PostgreSQL + TimescaleDB for time-series, events and analytics workloads.
+    Led product management and design. Now also lead sales, solutions architects and partnerships.
+  outcomes:
+    - Owned the self-serve funnel, covering sign-up, auth, onboarding, account management, pricing and docs.
+  links:
+    - { title: tigerdata.com, url: https://www.tigerdata.com }
+  tags: [postgres, timescaledb, cloud, plg]
+
+- name: Promscale
+  org: Timescale
+  years: 2021–2023
+  role: VP of Observability Products
+  summary: >-
+    Observability backend for metrics and traces (Prometheus, OpenTelemetry) built on TimescaleDB.
+    Led product, engineering and go-to-market.
+  outcomes: []
+  links: []
+  tags: [observability, opentelemetry, prometheus]
+
+- name: New Relic instrumentation & OpenTelemetry
+  org: New Relic
+  years: 2020–2021
+  role: VP Product Management, Data Collection
+  summary: >-
+    New Relic's agents, integrations and SDKs. Led the move from proprietary agents and standards
+    to open-source code built on OpenTelemetry and OpenMetrics.
+  outcomes: []
+  links: []
+  tags: [opentelemetry, open-source, agents]
+
+- name: New Relic Infrastructure
+  org: New Relic
+  years: 2017–2020
+  role: Principal PM → General Manager & VP Product
+  summary: >-
+    Monitoring for hosts, containers, Kubernetes, AWS/Azure/GCP services and the systems running on them.
+    Took over right after launch and led product and GTM with a team of 50.
+  outcomes:
+    - ARR grew from under $1M to over $40M. It was the fastest-growing product in New Relic's history.
+    - Daily monitored hosts grew from 5K to over 1M. Paying accounts grew from 100 to thousands.
+    - Kubernetes cluster monitoring grew nodes monitored 20% month over month for 12 months.
+    - Product sponsor for the CoScale acquisition.
+  links: []
+  tags: [observability, kubernetes, cloud, gtm]
+
+- name: Xyleme Content Delivery Service
+  org: Xyleme
+  years: 2011–2016
+  role: Director of Product Management
+  summary: >-
+    Delivery platform for structured training content, with iOS and Android apps.
+    Owned product strategy for the whole Xyleme platform.
+  outcomes:
+    - Revenue tripled in four years as the company grew from 30 to 120 people.
+  links: []
+  tags: [saas, edtech, mobile]
+
+- name: ProductTank Barcelona
+  org: Community
+  years: 2016–2019
+  role: Co-founder & organizer
+  summary: >-
+    Barcelona chapter of ProductTank, the global meetup by product managers for product managers.
+    Hosted international speakers and members of the local product community.
+  outcomes: []
+  links: []
+  tags: [community]
+
+- name: rollSense
+  org: 2or3things (co-founder)
+  years: 2006–2008
+  role: Co-founder
+  summary: Content recommendation widget for blogs.
+  outcomes:
+    - Served 3M recommendations a month at a 3.5% CTR within six months of launch.
+    - Signed an ad-technology partnership with Yahoo France.
+  links: []
+  tags: [startup, consumer]
