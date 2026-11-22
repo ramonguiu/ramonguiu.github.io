@@ -8,7 +8,7 @@ Personal site. Plain Jekyll on GitHub Pages: one layout, one stylesheet, no them
 |---|---|
 | Home page copy | `index.html` |
 | Resume | `_data/experience.yml`, `_data/education.yml` (rendered by `resume.html`) |
-| Products / work (page in `_unpublished/`, not live) | `_data/work.yml` |
+| Products / work (data only; page not built yet) | `_data/work.yml` |
 | Talks | `_data/talks.yml` |
 | Writing hosted elsewhere | `_data/writing_external.yml` |
 | Writing hosted here | `_posts/YYYY-MM-DD-slug.md` |
@@ -48,3 +48,8 @@ bundle exec jekyll serve
 ```
 
 Then open http://localhost:4000. Pushing to `gh-pages` deploys.
+
+## Drafts
+
+`_unpublished/` is a local-only folder for drafts. It's in `.gitignore` (never committed) and
+Jekyll skips folders starting with `_`, so nothing in it is published.

@@ -6,3 +6,6 @@ Gemfile.lock
 vendor/
 vendor/
 .bundle/
+
+# Local drafts: not published, not committed
+_unpublished/
