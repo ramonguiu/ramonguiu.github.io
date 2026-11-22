@@ -13,6 +13,7 @@ Ramon builds developer infrastructure and takes it to market. Engineer by traini
 
 - [Full profile in Markdown]({{ site.url }}/llms-full.txt): full resume in a single file
 - [Resume]({{ site.url }}/resume/): full career history
+- [Writing]({{ site.url }}/writing/): blog posts, including republished archived posts with original publication details
 
 ## Elsewhere
 

@@ -28,6 +28,7 @@ permalink: /writing/:title/
 
 nav:
   - { title: resume, url: /resume/ }
+  - { title: writing, url: /writing/ }
   # Pages being reworked live in _unpublished/. To restore one, move it back to the
   # repo root and add its nav entry here, e.g. { title: work, url: /work/ }
 

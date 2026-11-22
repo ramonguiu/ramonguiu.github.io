@@ -6,14 +6,19 @@ layout: default
   <h1>{{ page.title }}</h1>
   <p class="meta">
     <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y-%m-%d' }}</time>
+    {% if page.coauthors %} · with {{ page.coauthors | array_to_sentence_string }}{% endif %}
     {% if page.publication %} · originally published in
       {% if page.original_url %}<a href="{{ page.original_url }}">{{ page.publication }}</a>{% else %}{{ page.publication }}{% endif %}
     {% endif %}
   </p>
   {% if page.publication %}
   <aside class="note">
-    Republished here because the original is no longer online.
-    {% if page.archive_url %}<a href="{{ page.archive_url }}">Archived copy</a>.{% endif %}
+    {% if page.canonical_url %}
+      A copy of the <a href="{{ page.original_url }}">original post</a>, kept here in case it goes offline.
+    {% else %}
+      Republished here because the original is no longer online.
+    {% endif %}
+    {% if page.archive_url %}<a href="{{ page.archive_url }}">Internet Archive copy</a>.{% endif %}
   </aside>
   {% endif %}
 

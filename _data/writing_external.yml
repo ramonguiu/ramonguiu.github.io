@@ -1,8 +1,9 @@
-# Writing that lives elsewhere (still online) and is linked, not republished.
-# Posts recovered from the Internet Archive go in _posts/ instead. See README.md.
+# Writing that lives elsewhere and is only linked, not copied here.
+# Posts copied to this site (live or recovered from the Internet Archive) go in _posts/ instead.
+# See README.md for the post template.
 #
 # - title: Some post title
-#   publication: Tiger Data blog
+#   publication: Some blog
 #   date: 2024-03-01
-#   url: https://www.tigerdata.com/blog/...
+#   url: https://example.com/post
 []

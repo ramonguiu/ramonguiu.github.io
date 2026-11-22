@@ -33,7 +33,7 @@ Highlights:
 
 {% assign has_writing = site.posts.size | plus: site.data.writing_external.size %}{% if has_writing > 0 %}## Writing
 {% for p in site.posts %}
-- [{{ p.title }}]({{ site.url }}{{ p.url }}) ({{ p.date | date: '%Y-%m-%d' }}{% if p.publication %}, originally published in {{ p.publication }}{% endif %}){% endfor %}{% for p in site.data.writing_external %}
+- [{{ p.title }}]({{ site.url }}{{ p.url }}) ({{ p.date | date: '%Y-%m-%d' }}{% if p.publication %}, originally published in {{ p.publication }}{% endif %}{% if p.coauthors %}, co-written with {{ p.coauthors | array_to_sentence_string }}{% endif %}){% endfor %}{% for p in site.data.writing_external %}
 - [{{ p.title }}]({{ p.url }}) ({{ p.date | date: '%Y-%m-%d' }}, {{ p.publication }}){% endfor %}
 
 {% endif %}{% if site.data.talks.size > 0 %}## Talks

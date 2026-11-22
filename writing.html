@@ -1,11 +1,16 @@
 ---
-published: false  # unhide when there is content
 title: Writing
 permalink: /writing/
 description: Essays and blog posts by Ramon Guiu on product management, go-to-market and developer infrastructure.
 ---
 <p class="prompt">$ ls -t ~/writing</p>
 <h1>Writing</h1>
+<p class="meta">
+  A selection of posts I wrote as part of my roles at Tiger Data and New Relic,
+  from product strategy and launches to technical deep dives.
+  Each one notes where and when it was first published. I keep copies here so they
+  stay available if the originals are moved or taken down.
+</p>
 
 {%- comment -%}
   Posts (_posts/) and external links (_data/writing_external.yml) have different date types,
@@ -13,7 +18,7 @@ description: Essays and blog posts by Ramon Guiu on product management, go-to-ma
 {%- endcomment -%}
 {%- capture rows -%}
   {%- for p in site.posts -%}
-    {{ p.date | date: '%Y-%m-%d' }}<li><span class="date">{{ p.date | date: '%Y-%m-%d' }}</span><span><a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% if p.publication %}<span class="sub">originally in {{ p.publication }}</span>{% endif %}</span></li>@@ROW@@
+    {{ p.date | date: '%Y-%m-%d' }}<li><span class="date">{{ p.date | date: '%Y-%m-%d' }}</span><span><a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% if p.publication %}<span class="sub">originally in {{ p.publication }}{% if p.coauthors %}, with {{ p.coauthors | array_to_sentence_string }}{% endif %}</span>{% endif %}</span></li>@@ROW@@
   {%- endfor -%}
   {%- for p in site.data.writing_external -%}
     {{ p.date | date: '%Y-%m-%d' }}<li><span class="date">{{ p.date | date: '%Y-%m-%d' }}</span><span><a href="{{ p.url }}">{{ p.title }} ↗</a>{% if p.publication %}<span class="sub">on {{ p.publication }}</span>{% endif %}</span></li>@@ROW@@
