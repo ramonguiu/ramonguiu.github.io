@@ -5,6 +5,7 @@ publication: Tiger Data blog
 coauthors: [Naveen Sukumar]
 original_url: https://www.tigerdata.com/blog/tiger-lake-ga
 canonical_url: https://www.tigerdata.com/blog/tiger-lake-ga
+sitemap: false
 description: "Tiger Lake is generally available. Continuously sync Postgres tables and TimescaleDB hypertables to Apache Iceberg, without managing a replication pipeline."
 ---
 

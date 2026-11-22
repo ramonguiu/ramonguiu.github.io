@@ -4,6 +4,7 @@ date: 2021-10-11
 publication: Tiger Data blog
 original_url: https://www.tigerdata.com/blog/what-are-traces-and-how-sql-yes-sql-and-opentelemetry-can-help-us-get-more-value-out-of-traces-to-build-better-software
 canonical_url: https://www.tigerdata.com/blog/what-are-traces-and-how-sql-yes-sql-and-opentelemetry-can-help-us-get-more-value-out-of-traces-to-build-better-software
+sitemap: false
 archive_url: https://web.archive.org/web/20260711234029/https://www.tigerdata.com/blog/what-are-traces-and-how-sql-yes-sql-and-opentelemetry-can-help-us-get-more-value-out-of-traces-to-build-better-software
 description: "Learn what traces are and how you can use them to debug complex software. A deep dive from the Tiger Data engineering team."
 ---

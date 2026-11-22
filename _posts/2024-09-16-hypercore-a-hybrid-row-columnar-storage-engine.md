@@ -4,6 +4,7 @@ date: 2024-09-16
 publication: Tiger Data blog
 original_url: https://www.tigerdata.com/blog/hypercore-a-hybrid-row-storage-engine-for-real-time-analytics
 canonical_url: https://www.tigerdata.com/blog/hypercore-a-hybrid-row-storage-engine-for-real-time-analytics
+sitemap: false
 archive_url: https://web.archive.org/web/20260926051235/https://www.tigerdata.com/blog/hypercore-a-hybrid-row-storage-engine-for-real-time-analytics
 description: "See how we improved our hybrid row-columnar storage engine—now renamed hypercore—to solve our customers’ real-time analytics needs."
 ---

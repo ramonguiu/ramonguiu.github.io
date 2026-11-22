@@ -4,6 +4,7 @@ date: 2024-10-07
 publication: Tiger Data blog
 original_url: https://www.tigerdata.com/blog/building-the-modern-postgres-gui
 canonical_url: https://www.tigerdata.com/blog/building-the-modern-postgres-gui
+sitemap: false
 archive_url: https://web.archive.org/web/20260718052526/https://www.tigerdata.com/blog/building-the-modern-postgres-gui
 description: "See how we’re improving Postgres' GUI and developer experience in the cloud. Hint: the Timescale Console now has an integrated SQL editor."
 ---

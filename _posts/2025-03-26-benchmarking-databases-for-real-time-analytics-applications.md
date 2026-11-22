@@ -4,6 +4,7 @@ date: 2025-03-26
 publication: Tiger Data blog
 original_url: https://www.tigerdata.com/blog/benchmarking-databases-for-real-time-analytics-applications
 canonical_url: https://www.tigerdata.com/blog/benchmarking-databases-for-real-time-analytics-applications
+sitemap: false
 archive_url: https://web.archive.org/web/20260812114022/https://www.tigerdata.com/blog/benchmarking-databases-for-real-time-analytics-applications
 description: "Not all analytics are equal—neither are benchmarks. Meet RTABench and compare different databases—from PostgreSQL to ClickHouse—using real-world query patterns."
 ---

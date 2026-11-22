@@ -4,6 +4,7 @@ date: 2022-02-24
 publication: Tiger Data blog
 original_url: https://www.tigerdata.com/blog/learn-opentelemetry-tracing-with-this-lightweight-microservices-demo
 canonical_url: https://www.tigerdata.com/blog/learn-opentelemetry-tracing-with-this-lightweight-microservices-demo
+sitemap: false
 archive_url: https://web.archive.org/web/20260615235135/https://www.tigerdata.com/blog/learn-opentelemetry-tracing-with-this-lightweight-microservices-demo
 description: "Deploy this simple microservices demo using OpenTelemetry and learn how to get unprecedented insights about your systems."
 ---
